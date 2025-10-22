@@ -1313,6 +1313,12 @@
 		(color 0 0 0 0)
 		(uuid "c37f1cf1-e1df-4a20-890f-dca56e2d2421")
 	)
+	(junction
+		(at 110.49 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e86b8ccf-b836-4fe2-b4f4-86658ea8a33e")
+	)
 	(wire
 		(pts
 			(xy 132.08 58.42) (xy 132.08 59.69)
@@ -1322,6 +1328,16 @@
 			(type default)
 		)
 		(uuid "2459f2ca-1094-4d4e-b5a4-1c3db40d3349")
+	)
+	(wire
+		(pts
+			(xy 102.87 62.23) (xy 110.49 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2570c63b-269c-42d8-b408-02122dc301f0")
 	)
 	(wire
 		(pts
@@ -1405,6 +1421,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 62.23) (xy 95.25 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5717af46-9483-41e4-af7d-c93ad62d3825")
+	)
+	(wire
+		(pts
 			(xy 78.74 74.93) (xy 91.44 74.93)
 		)
 		(stroke
@@ -1412,6 +1438,16 @@
 			(type default)
 		)
 		(uuid "6d813d99-bd8e-4813-99a4-3d025ab55901")
+	)
+	(wire
+		(pts
+			(xy 91.44 67.31) (xy 91.44 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7342ce16-73fe-4b1d-806c-f59dc9b2f999")
 	)
 	(wire
 		(pts
@@ -1525,7 +1561,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 48.26) (xy 110.49 67.31)
+			(xy 110.49 62.23) (xy 110.49 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b11993-bb06-4456-a128-c1f2719cb3a0")
+	)
+	(wire
+		(pts
+			(xy 110.49 48.26) (xy 110.49 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2184,6 +2230,74 @@
 			(project ""
 				(path "/9d753f2a-e01e-44f6-9a32-88ece5b63e5d"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 99.06 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70ac1e66-1e3a-4091-b9ad-a81d71f35bfa")
+		(property "Reference" "R2"
+			(at 99.06 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 99.06 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 99.314 61.214 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 99.06 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64a0029d-2def-419b-a2f7-290ac8fdb551")
+		)
+		(pin "1"
+			(uuid "34b76a2c-0941-4f9e-9e03-d08e3f33bc57")
+		)
+		(instances
+			(project "Linear Power Supply"
+				(path "/9d753f2a-e01e-44f6-9a32-88ece5b63e5d"
+					(reference "R2")
 					(unit 1)
 				)
 			)
